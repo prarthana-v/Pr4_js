@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4</title>
+</head>
+<body>
+    <script>
+        // 4.Write a JavaScript program to find which number is greter in 4 numbers using ledder if else. (using no return with parameter function) ----------------------TSRN--------------------------------------------------------------
+
+        function Maxnum(a,b,c,d) {
+            if(a>b && a>c && a>d) document.write(`A is Max..`);
+            else if (b>a && b>c && b>d) document.write(`B is Max..`);
+            else if (c>a && c>b && c>d) document.write(`C is Max..`);
+            else if (d>a && d>b && d>c) document.write(`D is Max..`);
+        }
+
+        var a=parseInt(prompt(`Enter a number :- `));
+        var b=parseInt(prompt(`Enter b number :- `));
+        var c=parseInt(prompt(`Enter c number :- `));
+        var d=parseInt(prompt(`Enter d number :- `));
+        Maxnum(a,b,c,d);
+    </script>
+</body>
+</html>
