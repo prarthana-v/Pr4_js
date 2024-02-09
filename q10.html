@@ -9,6 +9,66 @@
      <script>
           // 10.Write a JavaScript program to decide that you eligible for voting? (using all function)
           
+          // ----------------------------------TNRN----------------------------------------------
+          function Eligiblitybytnrn(){
+               var age = parseInt(prompt(`Enter any age :- `));
+               document.write(`<h3>Age => ${age}</h3>`);
+               if(age>=18){
+                    document.write(`<h3>You are eligible to vote....</h3>`);
+               }
+               else{
+                    document.write(`<h3>You are not eligible to vote....</h3>`);
+               }
+          }
+
+          // ---------------------------------TSRN---------------------------------------------------
+          function Eligiblitybytsrn(aage){
+               document.write(`<h3>Age => ${aage}</h3>`);
+               if(aage>=18){
+                    document.write(`<h3>You are eligible to vote....</h3>`);
+               }
+               else{
+                    document.write(`<h3>You are not eligible to vote....</h3>`);
+               }
+          }
+
+          // -------------------------------TNRS--------------------------------------------------------
+          function Eligiblitybytnrs() {
+               var aage = parseInt(prompt(`Enter age :- `));
+               document.write(`<h3>Age => ${aage}</h3>`);
+               if(aage>=18){
+                    return "<h3>You are eligible to vote....</h3>";
+               }
+               else{
+                    return "<h3>You are not eligible to vote....</h3>";
+               }
+          }
+          
+          // ----------------------------------TSRS---------------------------------------------------
+          function Eligiblitybytsrs(agge){
+
+               
+               document.write(`<h3>Age => ${agge}</h3>`);
+               if(agge>=18){
+                    return "<h3>You are eligible to vote....</h3>";
+               }
+               else{
+                    return "<h3>You are not eligible to vote....</h3>";
+               }
+          }
+          
+          Eligiblitybytnrn();
+
+          var aage = parseInt(prompt(`Enter any aage :- `));
+          Eligiblitybytsrn(aage);
+          
+          var result = Eligiblitybytnrs();
+          document.write(`${result}`);
+
+          var agge = parseInt(prompt(`Enter age :- `));
+          var validity = Eligiblitybytsrs();
+          document.write(`${validity}`);
+
      </script>
 </body>
 </html>
