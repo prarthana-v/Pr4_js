@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Q6</title>
+</head>
+<body>
+     <script>
+          //  6.Write a javascript Program to perform a swapping of two variables.(all function use)
+          //  tnrn-----------------------
+          function SwapNumbyTNRN(){
+               document.write(`By TNRN`);
+               var a =parseInt(prompt(`Enter 1st number :- `));
+               var b =parseInt(prompt(`Enter 2nd number :- `));
+               var swap;
+          
+               document.write(`<h3>A Before Swapping : ${a} <br> B Before Swapping : ${b}`);
+
+               swap=a;
+               a=b;
+               b=swap;
+
+               document.write(`<h3>A After Swapping : ${a} <br> B After Swapping : ${b}</h1>`);
+
+          }
+
+          // ---------------------------------------TSRN-----------------------------------
+          function SwapNumbyTSRN(a,b) {
+               document.write(`By TSRN`);
+               document.write(`<h3>A Before Swapping : ${a} <br> B Before Swapping : ${b}`);
+               let swap=a;
+               a=b;
+               b=swap;
+
+               document.write(`<h3>A After Swapping : ${a} <br> B After Swapping : ${b}</h3>`);
+          }
+
+          // --------------------------TNRS-------------------------------------------------
+          function SwapNumbyTNRS() {
+               document.write(`By TNRS`);
+               
+               var a =parseInt(prompt(`Enter 1st number :- `));
+               var b =parseInt(prompt(`Enter 2nd number :- `));
+               var swap;
+
+               document.write(`<h3>A Before Swapping : ${a} <br> B Before Swapping : ${b}</h3>`);
+               swap=a;
+               a=b;
+               b=swap;
+               document.write(`<h3>A After Swapping : ${a} <br> B After Swapping : ${b}</h3>`);
+               return "Variables Swapped sucessfully.....<br>";
+          }
+
+          // -----------------------------------------------TSRS------------------------------------
+          function SwapNumbyTSRS(a,b) {
+               document.write(`<br>By TSRS`);
+               document.write(`<h3>A Before Swapping : ${a} <br> B Before Swapping : ${b}</h3>`);
+               swap=a;
+               a=b;
+               b=swap;
+               document.write(`<h3>A After Swapping : ${a} <br> B After Swapping : ${b}</h3>`);
+               return "Variables Swapped sucessfully.....";
+          }
+
+          SwapNumbyTNRN();
+
+          SwapNumbyTSRN(45,54);
+          
+          let Result = SwapNumbyTNRS();
+          document.write(`${Result}`);
+          
+          let Ans = SwapNumbyTSRS(23,32);
+          document.write(`${Ans}`);
+
+     </script>
+</body>
+</html>

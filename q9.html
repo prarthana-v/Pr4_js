@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Q9</title>
+</head>
+<body>
+     <script>
+          // 9.Write a JavaScript   program to input angles of a triangle and check whether triangle is valid or not.(using all function)
+          // ------------------------------------tnrn------------------------------------------
+          function Trianglebytnrn(){
+               var firstangle = parseInt(prompt(`Enter first angle :`));
+               var secondangle = parseInt(prompt(`Enter second angle :`));
+               var thirdangle = parseInt(prompt(`Enter third angle :`));
+
+               document.write(`<h3>First angle:${firstangle} , second angle:${secondangle} , Third angle : ${thirdangle}</h3>`);
+
+               let total = firstangle + secondangle + thirdangle;
+               document.write(`Total => ${total} `);
+               if (total==180) {
+                    document.write(`Triangle is valid...`)
+               }
+               else{
+                    document.write(`Triangle is invalid...`);
+               }
+          }
+          // --------------------------TSRN------------------------------------------------
+          function Trianglebytsrn(firstangle,secondangle,thirdangle){
+               
+               document.write(`<h3>First angle:${firstangle} , second angle:${secondangle} , Third angle : ${thirdangle}</h3>`);
+
+               let total = firstangle + secondangle + thirdangle;
+               document.write(`Total => ${total} `);
+
+               if (total==180) {
+                    document.write(`Triangle is valid...`)
+               }
+               else{
+                    document.write(`Triangle is invalid...`);
+               }
+          }
+
+          // --------------------------TNRS------------------------------------------------
+          function Trianglebytnrs(){
+               var firstangle = parseInt(prompt(`Enter first angle :`));
+               var secondangle = parseInt(prompt(`Enter second angle :`));
+               var thirdangle = parseInt(prompt(`Enter third angle :`));
+               
+               document.write(`<h3>First angle:${firstangle} , second angle:${secondangle} , Third angle : ${thirdangle}</h3>`);
+
+               let total = firstangle + secondangle + thirdangle;
+               document.write(`Total => ${total} `);
+
+               if (total==180) {
+                    return "Triangle is valid...";
+               }
+               else{
+                    return "Triangle is invalid...";
+               }
+
+          }
+
+          // --------------------------TSRS------------------------------------------------
+          function Trianglebytsrs(firstangle,secondangle,thirdangle){
+               
+               document.write(`<h3>First angle:${firstangle} , second angle:${secondangle} , Third angle : ${thirdangle}</h3>`);
+
+               let total = firstangle + secondangle + thirdangle;
+               document.write(`Total => ${total} `);
+               
+               if (total==180) {
+                    return "Triangle is valid...";
+               }
+               else{
+                    return "Triangle is invalid...";
+               }
+
+          }
+
+          Trianglebytnrn();
+          
+          Trianglebytsrn(45,45,90);
+
+          let ans = Trianglebytnrs();
+          document.write(`${ans}`);
+
+          let result = Trianglebytsrs(60,60,60);
+          document.write(`${result}`);
+     </script>
+</body>
+</html>

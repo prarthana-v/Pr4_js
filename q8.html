@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Q8</title>
+</head>
+<body>
+     <script>
+          // 8. Write a JavaScript program to create basic calculator using switch case. (simple function use)
+
+          var a = parseInt(prompt(`Enter A :-`));
+          var b = parseInt(prompt(`Enter B :-`));
+          var choice = prompt(`Enter choice : + - * / `);
+          document.write(`A = ${a} , B = ${b}`);
+
+          switch (choice) {
+               case '+':
+                    document.write(`<h3>Addition => ${a+b}</h3>`);
+                    break;
+
+               case '-':
+                    document.write(`<h3>Subtraction => ${a-b}</h3>`);
+                    break;
+               
+                    case '*':
+                    document.write(`<h3>Multiplication => ${a*b}</h3>`);
+                    break;
+               
+                    case '/':
+                    document.write(`<h3>Division => ${a/b}</h3>`);
+                    break;
+               
+                    default:
+                    break;
+          }
+     </script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Q6</title>
+</head>
+<body>
+     <script>
+          // 7.Write a JavaScript program to find which number is greter in 3 numbers using nested if else.(using all function)
+
+          // ----------------------TNRN---------------------------------------------------------------
+          function MaxNumbytnrn(){
+               var a = parseInt(prompt(`Enter a : `));
+               var b = parseInt(prompt(`Enter b :`));
+               var c = parseInt(prompt(`Enter c :`));
+               document.write(`<h3>A => ${a} , B => ${b} , C => ${c}</h3>`);
+
+               if(a>b){
+                    if(a>c){
+                         document.write(`A is max...`);
+                    }
+                    else{
+                         document.write(`C is max...`);
+                    }
+               }
+               else{
+                    if(b>c){
+                         document.write(`B is max...`);
+                    }
+                    else{
+                         document.write(`C is max...`);
+                    }
+               }
+          }
+
+          // ----------------------------------TSRN---------------------------------------------------
+          function MaxNumbytsrn(a,b,c){
+               document.write(`<h3>A => ${a} , B => ${b} , C => ${c}</h3>`);
+               if(a>b){
+                    if(a>c){
+                         document.write(`A is max...`);
+                    }
+                    else{
+                         document.write(`C is max...`);
+                    }
+               }
+               else{
+                    if(b>c){
+                         document.write(`B is max...`);
+                    }
+                    else{
+                         document.write(`C is max...`);
+                    }
+               }
+          }
+          
+          function MaxNumbytnrs() {
+               var a = parseInt(prompt(`Enter a : `));
+               var b = parseInt(prompt(`Enter b : `));
+               var c = parseInt(prompt(`Enter c : `));
+               document.write(`<h3>A => ${a} , B => ${b} , C => ${c}</h3>`);
+               if(a>b){
+                    if(a>c){
+                         document.write(`A is max...`);
+                    }
+                    else{
+                         document.write(`C is max...`);
+                    }
+               }
+               else{
+                    if(b>c){
+                         document.write(`B is max...`);
+                    }
+                    else{
+                         document.write(`C is max...`);
+                    }
+               }
+          }
+          
+                    
+          function MaxNumbytsrs(a,b,c) {
+               
+               document.write(`<h3>A => ${a} , B => ${b} , C => ${c}</h3>`);
+               if(a>b){
+                    if(a>c){
+                         document.write(`A is max...`);
+                    }
+                    else{
+                         document.write(`C is max...`);
+                    }
+               }
+               else{
+                    if(b>c){
+                         document.write(`B is max...`);
+                    }
+                    else{
+                         document.write(`C is max...`);
+                    }
+               }
+          }
+
+          MaxNumbytnrn();
+          MaxNumbytsrn(2,3,4);
+          MaxNumbytnrs();
+          MaxNumbytsrs(2,3,4);
+          
+     </script>
+</body>
+</html>
